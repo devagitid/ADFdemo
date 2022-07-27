@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: Starting resource creation
+- script: echo 'Starting resource creation'
   displayName: 'Run a one-line script'
 
 
