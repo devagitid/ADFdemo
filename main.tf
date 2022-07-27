@@ -31,7 +31,7 @@ resource "azurerm_data_factory_linked_service_azure_databricks" "msi_linked" {
   description     = "ADB Linked Service via MSI"
   adb_domain      = "https://${azurerm_databricks_workspace.adf.workspace_url}"
 
-  msi_work_space_resource_id = azurerm_databricks_workspace.example.id
+  msi_work_space_resource_id = azurerm_databricks_workspace.adf.id
 
   new_cluster_config {
     node_type             = "Standard_NC12"
