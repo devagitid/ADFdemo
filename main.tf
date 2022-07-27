@@ -1,3 +1,6 @@
+terraform {
+backend "azure" {}
+}
 
 resource "azurerm_resource_group" "adf" {
   name     = "adf-rg"
