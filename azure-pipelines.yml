@@ -10,5 +10,11 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo creatin azure resource
-  displayName: 'below is securefile'
+- script: echo 'Below is securefile'
+  displayName: 'Run the script'
+
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: 'ubuntuvmkey.pem'
+
+- script: cat ubuntuvmkey.pem
