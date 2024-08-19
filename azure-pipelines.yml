@@ -11,24 +11,4 @@ pool:
 
 steps:
 - script: echo creatin azure resource
-  displayName: 'Run a one-line script'
-
-- task: TerraformCLI@0
-  inputs:
-    command: 'init'
-    backendType: 'azurerm'
-    backendServiceArm: 'Azure resource'
-    backendAzureRmSubscriptionId: 'd2626169-7b5d-41d5-b3d0-137f693c4219'
-    ensureBackend: true
-    backendAzureRmResourceGroupName: 'terraformbackendrg'
-    backendAzureRmResourceGroupLocation: 'eastus'
-    backendAzureRmStorageAccountName: 'backendtfstorage'
-    backendAzureRmContainerName: 'terraformbackend'
-    backendAzureRmKey: 'terraform.tfstate'
-    allowTelemetryCollection: true
-
-- task: TerraformCLI@0
-  inputs:
-    command: 'apply'
-    environmentServiceName: 'Azure resource'
-    allowTelemetryCollection: true
+  displayName: 'below is securefile'
