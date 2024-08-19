@@ -14,7 +14,8 @@ steps:
   displayName: 'Run the script'
 
 - task: DownloadSecureFile@1
+  name: key
   inputs:
     secureFile: 'ubuntuvmkey.pem'
 
-- script: cat $(none.secureFilePath)
+- script: cat $(key.secureFilePath)
